@@ -1,0 +1,25 @@
+<div class="container">
+    <h1 class="animated fadeIn fast"> {{ curso.nombre_curso | uppercase}}: <small>({{curso.inicio | date:'y'}})</small></h1>
+
+    <hr>
+    <div class="row animated fadeIn">
+
+        <div class="col">
+            <img [src]="curso.img" class="img-fluid" alt="">
+            <br>
+            <a href="cursos" class="btn btn-outline-danger btn-block"> Regresar</a>
+        </div>
+
+        <div class="col">
+            <h3>{{ curso.nombre_curso}}</h3>
+            <hr>
+            <p>{{ curso.description}}</p>
+            <div>
+                <img *ngIf="curso.profesor=='Ricardo Buitrago - Bigdata master'" class="img-profe" src="assets/profe1.png" alt="">
+                <img *ngIf="curso.profesor=='Jonathan Salazar - IoT master'" class="img-profe" src="assets/profe2.png" alt="">
+                <img *ngIf="curso.profesor=='Andrés Toro - Robotics master'" class="img-profe" src="assets/profe3.png" alt="">
+            </div>
+        </div>
+
+    </div>
+</div>

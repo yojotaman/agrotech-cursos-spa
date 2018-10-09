@@ -1,0 +1,19 @@
+<h1 class="text-center">Cursos de robótica IoT y Analítica</h1>
+<hr>
+<div class="card-columns animated fadeIn fast">
+    <div class="card" *ngFor="let curso of cursos; let i = index">
+        <img class="card-img-top" [src]="curso.img" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{curso.nombre_curso}}</h5>
+            <p class="card-text">{{curso.description}}</p>
+            <p class="card-text"><small class="text-muted">{{curso.inicio}}</small></p>
+        </div>
+        <button (click)="getCurso(i)" class="btn btn-outline-primary btn-block">Ver más</button>
+        <!-- <a [routerLink]="['/curso', i]" class="btn btn-outline-primary">Ver más</a> -->
+
+
+    </div>
+
+
+
+</div>
