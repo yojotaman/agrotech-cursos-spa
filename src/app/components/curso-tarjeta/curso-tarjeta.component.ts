@@ -24,9 +24,9 @@ export class CursoTarjetaComponent implements OnInit {
 
   getCurso() {
     // console.log(this.index);
-    // this.router.navigate(['/curso', this.index]);
+    this.router.navigate(['/curso', this.index]);
 
-    this.cursoSeleccionado.emit(this.index);
+    // this.cursoSeleccionado.emit(this.index);
   }
 
 }

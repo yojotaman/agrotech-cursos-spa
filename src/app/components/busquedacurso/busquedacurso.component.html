@@ -11,6 +11,6 @@
 </div>
 
 <div class="card-columns animated fadeIn fast">
-    <app-curso-tarjeta [curso]="curso" [index]="i" *ngFor="let curso of cursos; let i = index"></app-curso-tarjeta>
+    <app-curso-tarjeta [curso]="curso" [index]="curso.idx" *ngFor="let curso of cursos"></app-curso-tarjeta>
 
 </div>

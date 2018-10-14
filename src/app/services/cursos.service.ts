@@ -64,10 +64,13 @@ export class CursosService {
         const cursosArr: Curso[] = [];
         entrada = entrada.toLowerCase();
 
-        for ( const curso of this.cursos ) {
+        for ( let i = 0; i < this.cursos.length; i++) {
+
+            const curso = this.cursos[i];
             const nombre = curso.nombre_curso.toLowerCase();
 
             if ( nombre.indexOf(entrada) >= 0 ) {
+                curso.idx = i;
                 cursosArr.push( curso );
             }
         }
@@ -83,4 +86,5 @@ export interface Curso {
     img: string;
     inicio: string;
     profesor: string;
+    idx?: number;
 }
