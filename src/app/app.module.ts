@@ -19,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
 import { CursosComponent } from './components/cursos/cursos.component';
 import { CursoComponent } from './components/curso/curso.component';
 import { BusquedacursoComponent } from './components/busquedacurso/busquedacurso.component';
+import { CursoTarjetaComponent } from './components/curso-tarjeta/curso-tarjeta.component';
 
 
 
@@ -30,7 +31,8 @@ import { BusquedacursoComponent } from './components/busquedacurso/busquedacurso
     AboutComponent,
     CursosComponent,
     CursoComponent,
-    BusquedacursoComponent
+    BusquedacursoComponent,
+    CursoTarjetaComponent
   ],
   imports: [
     BrowserModule,

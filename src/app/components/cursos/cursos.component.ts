@@ -20,7 +20,7 @@ export class CursosComponent implements OnInit {
 
   getCurso(idx: number) {
     // console.log(idx);
-    this.router.navigate(['curso', idx]);
+    this.router.navigate(['/curso', idx]);
   }
 
 }
